@@ -19,11 +19,24 @@
     .flex-row-wrap();
     width: 100%;
 
+    @media @phone {
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
@@ -46,8 +59,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+      margin-top: 25px;
+    }
+
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -63,6 +87,11 @@
         .make-button(#22283a, white, 5px, 1.9rem);
         font-weight: bold;
 
+        @media @phone {
+          width: 100%;
+          padding: 25px;
+        }
+
         &:hover {
           background: lighten(#22283a, 50%);
           color: darken(white, 50%);
@@ -73,6 +102,12 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 0px 20px 0px;
+      }
 
       img {
         width: 100%;
