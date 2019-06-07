@@ -1,3 +1,13 @@
+.flex-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.center-links {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -163,8 +173,8 @@ p {
 nav {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   background: #f6f6f6;
 }
@@ -210,6 +220,7 @@ footer {
 }
 .home .space-images {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
