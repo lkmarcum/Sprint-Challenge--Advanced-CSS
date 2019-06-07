@@ -1,10 +1,19 @@
 // Home Content
-
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .home {
   .intro {
     .header-img {
       width: 100%;
       border-radius: 5px;
+      animation-name: fade-in;
+      animation-duration: 4s;
     }
     h2 {
       padding: 15px;
@@ -18,6 +27,8 @@
   .space-images {
     .flex-row-wrap();
     width: 100%;
+    animation-name: fade-in;
+    animation-duration: 4s;
 
     @media @phone {
       .sky {
@@ -102,6 +113,8 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      animation-name: fade-in;
+      animation-duration: 4s;
 
       @media @phone {
         width: 100%;
